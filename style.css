@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@400;700&display=swap");
+
+* {
+  /* box-sizing: border-box; */
+  font-family: Inter;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 80vw;
+  height: 80vh;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.navbar {
+  width: 80vw;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.navbar > .menu {
+  /* border: 2px solid blue; */
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-weight: 600;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: 3, 1fr;
+  height: 500px;
+  width: 80vw;
+  grid-template-areas:
+    "i i b"
+    "h m b"
+    "a a a";
+}
+.large-img > img {
+  width: 52vw;
+  height: 200px;
+  grid-area: i;
+}
+.black {
+  margin-right: 0;
+  width: 25.2vw;
+  position: relative;
+  right: -12px;
+  height: 346px;
+  background-color: black;
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+}
+.black > .new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  height: 46px;
+}
+.new > .text {
+  display: flex;
+  justify-content: flex-start;
+  /* border: 2px solid yellow; */
+  width: 22vw;
+}
+.card {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.card > .text {
+  width: 22vw;
+  height: 80px;
+  border-bottom: 0.5px solid gray;
+}
+.card > .text > p {
+  /* border: 2px solid brown; */
+  font-size: 15px;
+  margin-top: 10px;
+  color: hsl(233, 8%, 79%);
+  font-weight: 500;
+}
+.black .VC > .text {
+  border-bottom: none;
+}
+.card > .text > h3 {
+  font-size: 9;
+}
+.card h3 {
+  /* border: 2px solid green; */
+  font-size: 16px;
+}
+
+.card > h3 {
+  font-size: 9;
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 52vw;
+  grid-area: h;
+}
+.headline {
+  display: flex;
+  flex-direction: row;
+  grid-area: h;
+  /* border: 2px dotted green; */
+  height: 120px;
+  width: 25vw;
+}
+.headline h1 {
+  font-size: 35px;
+}
+.meta {
+  /* border: 2px solid salmon; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding-left: 15px; */
+  width: 25vw;
+  height: 120px;
+  margin-left: 30px;
+  color: gray;
+  font-weight: 500;
+}
+.button {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(5, 85%, 60%);
+  color: white;
+  font-size: 9px;
+  letter-spacing: 5px;
+}
+.blogs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-area: a;
+  height: 100px;
+}
+.blogs img {
+  height: 100px;
+  width: 100px;
+}
+.blog {
+  height: 100px;
+  /* border: 2px solid aquamarine; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  width: 25vw;
+}
+.blog > .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog h2 {
+  color: hsl(233, 8%, 79%);
+}
+
+.blog h6 {
+  font-size: 16px;
+  font-weight: 800;
+}
+.blog p {
+  font-size: 15px;
+}
