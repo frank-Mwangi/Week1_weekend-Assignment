@@ -16,7 +16,7 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    <div class="content">
+    <div class="container">
       <div class="navbar">
         <div class="logo">
           <img src="../assets/images/logo.svg" alt="logo" />
@@ -39,62 +39,71 @@
           </div>
         </div>
       </div>
-      <div class="grid-container">
-        <div class="large-img">
-          <img src="../assets/images/image-web-3-desktop.jpg" alt="" />
-        </div>
-        <div class="black">
-          <div class="new">
-            <div class="text">
-              <h1>New</h1>
+      <div class="content">
+        <div class="top">
+          <aside class="left">
+            <div class="large-img">
+              <img
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt="Large hero image"
+              />
             </div>
-          </div>
-          <div class="card hydrogen">
-            <div class="text">
-              <h3>Hydrogen VS Electric Cars</h3>
-              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <div class="hero">
+              <div class="headline">
+                <div class="caption">
+                  <h1>The Bright <br />Future of <br />Web 3.0?</h1>
+                </div>
+              </div>
+              <div class="meta">
+                <div class="desc">
+                  <p>
+                    We dive into the next evolution of the web that claims to
+                    put the power of the platforms back into the hands of the
+                    people. But is it really fulfilling its promise?
+                  </p>
+                </div>
+                <div class="button">
+                  <h3>READ MORE</h3>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card downsides">
-            <div class="text">
-              <h3>The Downsides of AI Artistry</h3>
-              <p>
-                What are the possible adverse effects of on-demand AI image
-                generation?
-              </p>
+          </aside>
+          <aside class="right">
+            <div class="black">
+              <div class="new">
+                <div class="text">
+                  <h1>New</h1>
+                </div>
+              </div>
+              <div class="card hydrogen">
+                <div class="text">
+                  <h3>Hydrogen VS Electric Cars</h3>
+                  <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                </div>
+              </div>
+              <div class="card downsides">
+                <div class="text">
+                  <h3>The Downsides of AI Artistry</h3>
+                  <p>
+                    What are the possible adverse effects of on-demand AI image
+                    generation?
+                  </p>
+                </div>
+              </div>
+              <div class="card VC">
+                <div class="text">
+                  <h3>Is VC Funding Drying Up?</h3>
+                  <p>
+                    Private funding by VC firms is down 50% YOY. We take a look
+                    at what that means.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card VC">
-            <div class="text">
-              <h3>Is VC Funding Drying Up?</h3>
-              <p>
-                Private funding by VC firms is down 50% YOY. We take a look at
-                what that means.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="hero">
-          <div class="headline">
-            <div class="caption">
-              <h1>The Bright <br />Future of <br />Web 3.0?</h1>
-            </div>
-          </div>
-          <div class="meta">
-            <div class="desc">
-              <p>
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
-              </p>
-            </div>
-            <div class="button">
-              <h3>READ MORE</h3>
-            </div>
-          </div>
+          </aside>
         </div>
         <div class="blogs">
-          <div class="blog 1">
+          <div class="blog one">
             <div class="thumbnail">
               <img src="../assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
             </div>
@@ -110,7 +119,7 @@
               </div>
             </div>
           </div>
-          <div class="blog 2">
+          <div class="blog two">
             <div class="thumbnail">
               <img src="../assets/images/image-top-laptops.jpg" alt="Laptop" />
             </div>
@@ -126,7 +135,7 @@
               </div>
             </div>
           </div>
-          <div class="blog 3">
+          <div class="blog three">
             <div class="thumbnail">
               <img
                 src="../assets/images/image-gaming-growth.jpg"
